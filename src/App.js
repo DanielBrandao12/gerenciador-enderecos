@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import UserRegisterScene from "./scenes/UserRegisterScene";
+import UsersScene from "./scenes/UsersScene";
+import AddressListScene from "./scenes/AddressListScene";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  //return <UserRegisterScene />;
+ // return <UsersScene />;
+ // Exercício aula 26/01
+ // Criar a Página de listagem de endereços
+ // Essa página irá utilizar o componente do Header e também irá criar um componente novo
+ // para o card de endereços. Pode seguir o padrão como foi feito a página de usuários.
+ return <AddressListScene/>;
 }
 
 export default App;
